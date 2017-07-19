@@ -1,21 +1,25 @@
-/**index.wxss**/
-.userinfo {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.map-con {
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 42px;
 }
-
-.userinfo-avatar {
-  width: 128rpx;
-  height: 128rpx;
-  margin: 20rpx;
-  border-radius: 50%;
+.bottom-area {
+	display: flex;
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	line-height: 42px;
+	text-align: center;
+	color: #fff;
 }
-
-.userinfo-nickname {
-  color: #aaa;
+.publish {
+	flex: 1;
+	background: #585858;
 }
-
-.usermotto {
-  margin-top: 200px;
+.search {
+	flex: 1;
+	background: #000;
 }
