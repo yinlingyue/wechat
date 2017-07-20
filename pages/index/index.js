@@ -44,14 +44,16 @@ Page({
 		});
 
         wx.request({
-                url: 'https://nuanwan.wekeji.cn/student/index.php/trade/get_list', 
-                data: {},
-                method: "GET",
-                header: {
-                  'content-type': 'application/x-www-form-urlencoded'
-                },
-                success: this.handleGetMarkersSucc.bind(this)
-            })
+            url: 'https://nuanwan.wekeji.cn/student/index.php/trade/get_list', 
+            data: {
+                distinct:"YinLingYue_666"
+            },
+            method: "GET",
+            header: {
+                'content-type': 'application/x-www-form-urlencoded'
+            },
+            success: this.handleGetMarkersSucc.bind(this)
+        })
     },
 
     handleGetMarkersSucc: function(res) {
@@ -83,7 +85,7 @@ Page({
 
     onShareAppMessage: function () {
         return {
-            title: '最酷炫的美食交友平台',
+            title: '最酷炫的线下水族交易平台',
             path: 'pages/index/index'
         }
     },

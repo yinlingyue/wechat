@@ -71,12 +71,13 @@ Page({
 					latitude:this.staticData.latitude,
 					type: this.staticData.type,
 					message: this.staticData.message,
-					contact: this.staticData.contact
+					contact: this.staticData.contact,
+					distinct:"YinLingYue_666"
 			  	},
 			  	method: "POST",
-				header: {
-				    'content-type': 'application/x-www-form-urlencoded'
-				},
+				  header: {
+				      'content-type': 'application/x-www-form-urlencoded'
+				  },
 				success: this.handleSubmitSucc.bind(this)
 			})
 		}
