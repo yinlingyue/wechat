@@ -85,7 +85,7 @@ Page({
 
     onShareAppMessage: function () {
         return {
-            title: '最酷炫的线下水族交易平台',
+            title: '最酷炫的美食约会平台',
             path: 'pages/index/index'
         }
     },
